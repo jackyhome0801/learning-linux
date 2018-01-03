@@ -1,4 +1,4 @@
-##  基本
+## 基本功能 
 - 怎么打开VIM功能
   - 创建 ~/.vimrc
   - 或者在编辑是使用  :set nocompatible

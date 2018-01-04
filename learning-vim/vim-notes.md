@@ -16,3 +16,4 @@
 - CTRL+U上翻半页，CTRL+D下翻半页，CTRL+B上翻一页，CTRL+F下翻一页
 - CTRL+G显示状态栏
 - dd删除一行，dw删除单词，d$删除到行尾
+- c命令和d命令一样，除了删除完了后，会进入insert 模式

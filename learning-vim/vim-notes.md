@@ -15,7 +15,7 @@
 - fx 往前搜索字符x, ; 命令向前重复搜索，，命令反向重复搜索，Fx 命令往后搜索, tx/Tx停留在x的前一个字符
 - nG, 移动到第n行, G移动到最后一行，gg移动到第一行
 - H 命令移到当前屏幕第一行，M 移到屏幕中间，L 移到屏幕底部
-- CTRL+U上翻半页，CTRL+D下翻半页，CTRL+B上翻一页，CTRL+F下翻一页,CTRL+Y上翻一行，CTRL+E下翻一行
+- CTRL+U上翻半页，CTRL+D下翻半页，CTRL+B上翻一页，CTRL+F下翻一页,CTRL+Y上翻一行，CTRL+E下翻一行,10CTRL+Y上翻10行
 - CTRL+G显示状态栏
 - dd删除一行，dw删除单词，d$删除到行尾
 - c命令和d命令一样，除了删除完了后，会进入insert 模式

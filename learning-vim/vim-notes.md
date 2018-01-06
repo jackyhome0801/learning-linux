@@ -32,7 +32,7 @@
 - :set hlsearch 设置高亮显示搜索结果，:set nohlsearch，取消高亮搜索显示，:nohlsearch 取消当前高亮
 - :set incsearch 设置搜索为增量搜索，意思就是每输入一个字符就为显示当前搜索结果，不用等按回车键再执行搜索，:set noincsearch 取消该设置
 - ^string, 搜索string并string在行首，string$，搜索string并string在行尾，^string$，搜索一行只有string的行，^$搜索空行， . 可以匹配任意一个字符， 如 /the.abc 可以匹配theAabc，theBabc, the1abc
-- \可以取消特殊字符，例如，要搜索"the."， 命令是 /the\.   
+- \可以取消特殊字符，例如，要搜索"the."， 命令是 /the\\.   
 - :set ignorecase 搜索时忽略大小写，:set noignorecase 不忽略大小写
 - 同时设置 :set ignorecase   :set smartcase， 那么输入都是小写时会忽略大小写，如果输入的搜索字符串至少有一个大写字符则不忽略大小写
 - 默认搜索从当前光标开始，如果搜索到文件尾还没有，会回到文件首再开始搜索，:set nowrapscan 使得搜索到文件尾还没匹配时停止搜索，:set wrapscan 恢复

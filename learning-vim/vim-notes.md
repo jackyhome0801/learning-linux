@@ -35,3 +35,4 @@
 - \可以取消特殊字符，例如，要搜索"the."， 命令是 /the\.   
 - :set ignorecase 搜索时忽略大小写，:set noignorecase 不忽略大小写
 - 同时设置 :set ignorecase   :set smartcase， 那么输入都是小写时会忽略大小写，如果输入的搜索字符串至少有一个大写字符则不忽略大小写
+- 默认搜索从当前光标开始，如果搜索到文件尾还没有，会回到文件首再开始搜索，:set nowrapscan 使得搜索到文件尾还没匹配时停止搜索，:set wrapscan 恢复

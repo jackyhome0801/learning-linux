@@ -29,3 +29,4 @@
 - q{c} 开始录制，到下一个 q 结束, @{c} 重复录制的操作
 ## 搜索
 - /string, 用来搜索字符串，/+UP或/+DOWN可以上下翻搜索的历史记录
+- :set hlsearch 设置高亮显示搜索结果，:set nohlsearch，取消高亮搜索显示，:nohlsearch 取消当前高亮

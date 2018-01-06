@@ -30,3 +30,4 @@
 ## 搜索
 - /string, 用来搜索字符串，/+UP或/+DOWN可以上下翻搜索的历史记录
 - :set hlsearch 设置高亮显示搜索结果，:set nohlsearch，取消高亮搜索显示，:nohlsearch 取消当前高亮
+- :set incsearch 设置搜索为增量搜索，意思就是每输入一个字符就为显示当前搜索结果，不用等按回车键再执行搜索，:set noincsearch 取消该设置

@@ -41,4 +41,4 @@
 - /const/b2 搜索并光标向右移动2个字符，/const/b-2 搜索并光标向左移动2个字符
 - /const/e 搜索并将光标置于词尾，/const/e2搜索并将光标从词尾开始右移2个字符，/const/e-2搜索并将光标从词尾向左移2个字符
 - /const/e+2, / (重复搜索，使用相同的偏移量)， //5 (重复搜索，偏移量变成5)，// (重复搜索，偏移量变为0)
-- \<string 可以匹配以string为开头的词，string\> 匹配以string为结尾的词，\<string\> 可以精确匹配为string的词
+- \\<string 可以匹配以string为开头的词，string\\> 匹配以string为结尾的词，\\<string\\> 可以精确匹配为string的词

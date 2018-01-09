@@ -55,4 +55,5 @@
 - vim可以用 y 命令执行 copy 操作，不同于 d 命令，y 操作不会删除，但其它功能基本一样，如 yy 表示 copy 当前行，y$是copy到行尾，ma和y‘a的命令组合可以copy文本块，Y命令可以copy一行，前面加count可以copy多行
 - !\<command\> 可以执行一些系统命令并更新或写入到当前文件，如 !10Gsort 可以把当前行到第10行排序, !!命令可以对当前行操作，如 !!ls 可以把当前目录的ls结果插入到当前行  , !!date 可以插入日期到当前行
 - 在当前文件打开另一个文件用 : vi file 命令, 如果当前文件有修改未保存 , 可以用 : write 保存，或者用  ：vi! file 放弃当前文件的修改 , : view file 可以以只读的方式打开另一个文件
--vim可以同时打开多个文件，如 vim  one.c two.c three.c , 在文件间跳转可以用 : next 和 : previous  , 如果当前文件有修改未保存，则 : wnext 和 : wprevious 命令可以保存并跳转 , : next! 和 : previous!可以放弃保存并跳转 , : first 和 : last 命令可以跳转到第一个文件和最后一个文件
+- vim可以同时打开多个文件，如 vim  one.c two.c three.c , 在文件间跳转可以用 : next 和 : previous  , 如果当前文件有修改未保存，则 : wnext 和 : wprevious 命令可以保存并跳转 , : next! 和 : previous!可以放弃保存并跳转 , : first 和 : last 命令可以跳转到第一个文件和最后一个文件, : args 命令可以查看当前打开的所有文件，并且当前编辑的文件用[]显示
+- : set autowrite 可以设置自动保存 , : set nnoautowrite 取消 

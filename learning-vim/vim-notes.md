@@ -50,4 +50,4 @@
 - \\( 和 \\)可以指定一个group， 如 a\\(XY\\)\*b 可以匹配 ab, aXYb, aXYXYb, 第一个group 可以用 \\1表示，第二个是\\2，以此类推，如要搜索 the the， 可以是  \\(the\\) \\1
 - \\| 可以按or匹配，如 foo\\|bar可以匹配foo或者bar
 ## 文本块和多文件
--我们用d和x命令删除的内容，会被保存起来，用 p 命令可以 paste 出来 ,  p 命令在当前光标后一个字符开始paste , P 命令在当前光标前 paste , 前面加 count可以 paste 多次
+- 我们用d和x命令删除的内容，会被保存起来，用 p 命令可以 paste 出来 ,  p 命令在当前光标后一个字符开始paste , P 命令在当前光标前 paste , 前面加 count可以 paste 多次

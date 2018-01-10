@@ -50,7 +50,7 @@
 - \\( 和 \\)可以指定一个group， 如 a\\(XY\\)\*b 可以匹配 ab, aXYb, aXYXYb, 第一个group 可以用 \\1表示，第二个是\\2，以此类推，如要搜索 the the， 可以是  \\(the\\) \\1
 - \\| 可以按or匹配，如 foo\\|bar可以匹配foo或者bar
 ## 文本块和多文件
-- 我们用d和x命令删除的内容，会被保存起来，用 p 命令可以 paste 出来 ,  p 命令在当前光标后一个字符开始paste , P 命令在当前光标前 paste , 前面加 count可以 paste 多次
+- 我们用d和x命令删除的内容，会被保存起来，用 p 命令可以 paste 出来 ,  p 命令在当前光标后一个字符开始paste , P 命令在当前光标前 paste , 前面加 count可以 paste 多次, gp/gP 命令可以在 paste 之后光标放在paste的文本最后
 - vim可以用 a ~ z 做 mark 标记，如 ma， ‘a 表示移动到 a 标记的地方的行首，`a表示移动到a标记的地方（标记时光标的位置），我们用 ma, d'a 命令可以删除一整块内容 , :marks 命令可以看到所有mark标记
 - vim可以用 y 命令执行 copy 操作，不同于 d 命令，y 操作不会删除，但其它功能基本一样，如 yy 表示 copy 当前行，y$是copy到行尾，ma和y‘a的命令组合可以copy文本块，Y命令可以copy一行，前面加count可以copy多行
 - !\<command\> 可以执行一些系统命令并更新或写入到当前文件，如 !10Gsort 可以把当前行到第10行排序, !!命令可以对当前行操作，如 !!ls 可以把当前目录的ls结果插入到当前行  , !!date 可以插入日期到当前行

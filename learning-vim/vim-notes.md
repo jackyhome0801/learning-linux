@@ -54,7 +54,7 @@
 - vim可以用 a ~ z 做 mark 标记，如 ma， ‘a 表示移动到 a 标记的地方的行首，`a表示移动到a标记的地方（标记时光标的位置），我们用 ma, d'a 命令可以删除一整块内容 , :marks 命令可以看到所有mark标记
 -一些特殊的mark标记，如‘表示上次光标的位置，所以‘’可以回到上次位置，[上次插入文本的第一行,]上次插入文本的最后一行
 - vim可以用 y 命令执行 copy 操作，不同于 d 命令，y 操作不会删除，但其它功能基本一样，如 yy 表示 copy 当前行，y$是copy到行尾，ma和y‘a的命令组合可以copy文本块，Y命令可以copy一行，前面加count可以copy多行
-- !\<command\> 可以执行一些系统命令并更新或写入到当前文件，如 !10Gsort 可以把当前行到第10行排序, !!命令可以对当前行操作，如 !!ls 可以把当前目录的ls结果插入到当前行  , !!date 可以插入日期到当前行
+- !\<command\> 可以执行一些系统命令并更新或写入到当前文件，如 !10Gsort 可以把当前行到第10行排序, !!命令可以对当前行操作，如 !!ls 可以把当前目录的ls结果插入到当前行  , !!date 可以插入日期到当前 行
 - 在当前文件打开另一个文件用 : vi file 命令, 如果当前文件有修改未保存 , 可以用 : write 保存，或者用  ：vi! file 放弃当前文件的修改 , : view file 可以以只读的方式打开另一个文件
 - vim可以同时打开多个文件，如 vim  one.c two.c three.c , 在文件间跳转可以用 : next 和 : previous  , 如果当前文件有修改未保存，则 : wnext 和 : wprevious 命令可以保存并跳转 , : next! 和 : previous!可以放弃保存并跳转 , : first 和 : last 命令可以跳转到第一个文件和最后一个文件, : args 命令可以查看当前打开的所有文件，并且当前编辑的文件用[]显示
 - : set autowrite 可以设置自动保存 , : set noautowrite 取消 
@@ -64,3 +64,4 @@
 - 有一些特殊的register，如  _ , =, \* 等
 - vim \`grep -l 'frame_counter' *.c\` 这条命令可以打开所有包含 frame_counter 的 c文件, :arg \`grep -l 'frame_counter' *.c\` 可以实现类似功能, :args 可以查看所有编辑的文件, :argument i可以查看第 i 个文件(和 :buffers, :buffer i有点类似)
 - vim支持 +cmd 功能，如 vim +97 a.cc 打开a.cc文件并光标停留在第97行 ， vim +/#include a.cc并执行搜索功能，光标停留在第一个#include上，在其它命令如 :next +cmd 也可以
+- 小写的mark a～z作用域在当前文件，如 one.c two.c都可以设置ma，执行‘a，相互不会有干扰，如果是大写的mark A~Z，作用域是全局的，如在one.c设置了mA，然后打开了two.c，执行’A，则会跳转到one.c

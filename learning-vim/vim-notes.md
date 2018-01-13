@@ -62,4 +62,4 @@
 - Multiple Register, yy/p 可以执行copy/paste，使用的是unamed register，也可以具体指定register，如“ayy执行copy当前行到register a，然后执行”ap可以paste register a的内容，也可以“byy/”bp ,  : registers 可以查看register内容
 - 添加文本，“ayy拷贝一行到register a，并替换原来register a的内容，如果想追加内容，可以用“Ayy，如“ayy拷贝第一行，”Ayy拷贝第二行，那么“ap可以paste第一和第二行
 - 有一些特殊的register，如  _ , =, \* 等
-- vim `grep -l 'frame_counter' *.c`这条命令可以打开所有包含 frame_counter 的 c文件, :arg `grep -l 'frame_counter' *.c` 可以实现类似功能
+- vim \`grep -l 'frame_counter' *.c\` 这条命令可以打开所有包含 frame_counter 的 c文件, :arg \`grep -l 'frame_counter' *.c\` 可以实现类似功能

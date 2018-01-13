@@ -66,4 +66,4 @@
 - vim支持 +cmd 功能，如 vim +97 a.cc 打开a.cc文件并光标停留在第97行 ， vim +/#include a.cc并执行搜索功能，光标停留在第一个#include上，在其它命令如 :next +cmd 也可以
 - 小写的mark a～z作用域在当前文件，如 one.c two.c都可以设置ma，执行‘a，相互不会有干扰，如果是大写的mark A~Z，作用域是全局的，如在one.c设置了mA，然后打开了two.c，执行’A，则会跳转到one.c
 - 在insert mode下，也可以执行一些命令，CTRL+U（删除一行），CTRL+W（删除光标前的一个词），CTRL+Left/Right（想左或右移动一个词），Home/End（移动到行首或行尾），CTRL+Home/End（移动到文件首或尾），CTRL+A（插入上次insert mode时输入的内容），CTRL+Y（输入当前光标上面的字符），CTRL+R\<register\>（插入register的内容，和”ap类似
-- : set wrap 可以打开wrap功能  ,  : set nowrap 关闭，在nowrap的情况下，一行特别长的话，会跑出屏幕外，g^/g0/g$/gm可以移动到当前屏幕的行首行尾行中间等（不同于0/^/$等是针对行，不管行有多长，哪怕抛出屏幕，也会移到相应的行首行尾），在wrap开启的情况下，如果一行太长，会自动分行显示，gj/gk可以移动到屏幕上一行下一行（不同于j/k，移动到上一行下一行，如果一行很长被分成了3行，实际移动的是当前屏幕的3行
+- : set wrap 可以打开wrap功能  ,  : set nowrap 关闭，在nowrap的情况下，一行特别长的话，会跑出屏幕外，g^/g0/g$/gm可以移动到当前屏幕的行首行尾行中间等（不同于0/^/$等是针对行，不管行有多长，哪怕抛出屏幕，也会移到相应的行首行尾），在wrap开启的情况下，如果一行太长，会自动分行显示，gj/gk可以移动到屏幕上一行下一行（不同于j/k，移动到上一行下一行，如果一行很长被分成了3行，实际移动的是当前屏幕的3行），在nowrap的情况下，一行太长的话会让屏幕跑出去[count]zh/zl可以让屏幕左右移动[count]个字符，zL/zR可以左右移动半个屏幕，除了 : set wrap 还有 : set linebreak 命令

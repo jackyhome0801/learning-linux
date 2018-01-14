@@ -71,4 +71,4 @@
 - 命令  : split 可以把窗口分割 ，CTRL+Ww命令可以切换窗口，CTRL+Wj/Wk可以上下切换窗口，要关闭一个窗口，可以用zz或 :q 命令 ，split后不跟文件名，默认分割出当前文件，也可以带文件名打开其他文件，如当前在one.c ，:split two.c可以让one.c/two.c同时显示出来，也可以跟+commond命令，如 split +/include two.c，可以打开two.c并搜索include，split前加数字可以控制新打开窗口的size，如 :10 split two.c, 那么新打开的two.c窗口只有10行高度
 - :new可以打开新窗口编辑新文件，:sview是 :split/:view，可以以只读方式打开新窗口
 - countCTRL+W+/countCTRL+W-,可以改名窗口大小，CTRL+W=可以让所有窗口大小相等，countCTRL+W_可以让当前窗口count行高，如果没带count，可以让当前窗口变成最大size
--命令:buffers可以查看buffer，:buffer number可以查看第几个buffer，:buffer file可以打开文件名为file的buffer，:sbuffer file可以分窗口打开，还有命令 :bnext / :bprevious / :bfirst / :blast / :sbnext / :sbprevious / :sblast / :sbfirst等 
+- 命令:buffers可以查看buffer，:buffer number可以查看第几个buffer，:buffer file可以打开文件名为file的buffer，:sbuffer file可以分窗口打开，还有命令 :bnext / :bprevious / :bfirst / :blast / :sbnext / :sbprevious / :sblast / :sbfirst等 

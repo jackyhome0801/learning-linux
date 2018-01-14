@@ -69,4 +69,4 @@
 - : set wrap 可以打开wrap功能  ,  : set nowrap 关闭，在nowrap的情况下，一行特别长的话，会跑出屏幕外，g^/g0/g$/gm可以移动到当前屏幕的行首行尾行中间等（不同于0/^/$等是针对行，不管行有多长，哪怕抛出屏幕，也会移到相应的行首行尾），在wrap开启的情况下，如果一行太长，会自动分行显示，gj/gk可以移动到屏幕上一行下一行（不同于j/k，移动到上一行下一行，如果一行很长被分成了3行，实际移动的是当前屏幕的3行），在nowrap的情况下，一行太长的话会让屏幕跑出去[count]zh/zl可以让屏幕左右移动[count]个字符，zL/zR可以左右移动半个屏幕，除了 : set wrap 还有 : set linebreak 命令
 ## 多窗口
 - 命令  : split 可以把窗口分割 ，CTRL+Ww命令可以切换窗口，CTRL+Wj/Wk可以上下切换窗口，要关闭一个窗口，可以用zz或 :q 命令 ，split后不跟文件名，默认分割出当前文件，也可以带文件名打开其他文件，如当前在one.c ，:split two.c可以让one.c/two.c同时显示出来，也可以跟+commond命令，如 split +/include two.c，可以打开two.c并搜索include，split前加数字可以控制新打开窗口的size，如 :10 split two.c, 那么新打开的two.c窗口只有10行高度
--:new可以打开新窗口编辑新文件，:sview是 :split/:view，可以以只读方式打开新窗口
+- :new可以打开新窗口编辑新文件，:sview是 :split/:view，可以以只读方式打开新窗口

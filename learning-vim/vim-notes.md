@@ -73,3 +73,4 @@
 - countCTRL+W+/countCTRL+W-,可以改名窗口大小，CTRL+W=可以让所有窗口大小相等，countCTRL+W_可以让当前窗口count行高，如果没带count，可以让当前窗口变成最大size
 - 命令:buffers可以查看buffer，:buffer number可以查看第几个buffer，:buffer file可以打开文件名为file的buffer，:sbuffer file可以分窗口打开，还有命令 :bnext / :bprevious / :bfirst / :blast / :sbnext / :sbprevious / :sblast / :sbfirst等 
 - 用 :buffers看buffer，有一列状态栏，-表示inactive，h表示hidden的buffer，%表示active也就是当前编辑的buffer，#表示alternative buffer，+表示modified的buffer，:hide命令可以hidden当前buffer，关闭一个文件时，buffer默认会变成inactive，:set hidden命令可以让关闭文件动作使得buffer变成hidden而不是inactive
+-命令 : set switchbuf=useopen , 当当前buffer已经在窗口中打开时，不会打开新窗口，而是重用当前已打开的窗口

@@ -72,6 +72,7 @@
 - CTRL+Wt（切换到top窗口），CTRL_Wb（切换到buttom窗口），CTRL+Wp（切换到上一次窗口），CTRL+Ww（切换到下一个窗口），CTRL+WW（切换到上一个窗口），CTRL+Wr（向下旋转窗口），CTRL+WR（向上旋转窗口），CTRL+Wx（和下一个窗口交换窗口
 - 命令:wall可以针对所有窗口执行write操作，类似的命令有 :qall（退出所有窗口  ），:qall！，:wqall
 - 命令CTRL+Wo可以关闭所有窗口，只保留当前窗口，:all可以把所有文件以多窗口方式打开
+- CTRL+W&CTRL+I命令 可以split窗口并搜索光标下面的词，搜索可以包含#include的文件
 - :new可以打开新窗口编辑新文件，:sview是 :split/:view，可以以只读方式打开新窗口
 - countCTRL+W+/countCTRL+W-,可以改名窗口大小，CTRL+W=可以让所有窗口大小相等，countCTRL+W_可以让当前窗口count行高，如果没带count，可以让当前窗口变成最大size
 - 命令:buffers可以查看buffer，:buffer number可以查看第几个buffer，:buffer file可以打开文件名为file的buffer，:sbuffer file可以分窗口打开，还有命令 :bnext / :bprevious / :bfirst / :blast / :sbnext / :sbprevious / :sblast / :sbfirst等 

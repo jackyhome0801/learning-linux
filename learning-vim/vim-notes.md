@@ -79,4 +79,5 @@
 - 用 :buffers看buffer，有一列状态栏，-表示inactive，h表示hidden的buffer，%表示active也就是当前编辑的buffer，#表示alternative buffer，+表示modified的buffer，:hide命令可以hidden当前buffer，关闭一个文件时，buffer默认会变成inactive，:set hidden命令可以让关闭文件动作使得buffer变成hidden而不是inactive
 - 命令 : set switchbuf=useopen , 当当前buffer已经在窗口中打开时，不会打开新窗口，而是重用当前已打开的窗口
 ## Visual Mode
-- 有三种Visual Mode，v是从字符到字符的高亮显示，V是行到行的高亮显示，CTRL+V是矩形高亮显示（可以显示一部分列
+- 有三种Visual Mode，v是从字符到字符的高亮显示，V是行到行的高亮显示，CTRL+V是矩形高亮显示（可以显示一部分列）
+- d可以删除高亮显示部分，D可以删除高亮显示的行（即使改行只有部分高亮），y可以copy高亮部分，Y可以copy高亮显示的行

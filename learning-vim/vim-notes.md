@@ -80,6 +80,7 @@
 - 命令 : set switchbuf=useopen , 当当前buffer已经在窗口中打开时，不会打开新窗口，而是重用当前已打开的窗口
 ## Visual Mode
 - 有三种Visual Mode，v是从字符到字符的高亮显示，V是行到行的高亮显示，CTRL+V是矩形高亮显示（可以显示一部分列），模式之前的切换只要按下新的模式命令即可，如当前是v模式，想要切换到矩形高亮显示，只要按CTRL+V即可，ESC键可以推出Visual Mode，或者重复按当前模式，比如当前在v模式，再按一次v退出
+- gv可以重复上次visual block的selection
 - d可以删除高亮显示部分，D可以删除高亮显示的行（即使改行只有部分高亮），y可以copy高亮部分，Y可以copy高亮显示的行，还有c/C命令也可以执行delete之后进入insert mode, yank操作也可以使用register，如“ad会把block块删除并copy到register a，”ap可以paste出来，“ay/”ap类似，只是不删除block，只copy，“aY/”ap针对高亮显示的整行操作
 - J命令可以把所有高亮显示的行合并成一行，用空格分隔，gJ合并但是没有空格分隔
 - 对于高亮显示的行，可以用 > 和 < 进行向左或向右缩进，缩进大小可以用shiftwidth选项调整，=命令可以indent文本，CTRL+]可以跳转到函数定义的地方
